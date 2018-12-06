@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="홍길동"
+                android:id="@+id/tv_emp_act_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#ECEFF1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:text="최종학력- 대졸"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_emp_act_last_acdmcr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <View
+                    android:background="#ECEFF1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:text="직무- 개발자"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_emp_act_tchnlgy_job_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ECEFF1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:text="경력- 5년"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_emp_act_career"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <View
+                    android:background="#ECEFF1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:text="기술등급- 상"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_emp_act_tchnlgy_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="#ECEFF1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_emp_act_join_project_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

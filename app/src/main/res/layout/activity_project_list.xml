@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ProjectListActivity">
+
+    <RelativeLayout
+        android:elevation="8dp"
+        android:background="#FFFFFF"
+        android:id="@+id/rl_list_act_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <RelativeLayout
+            android:id="@+id/btn_list_act_back"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_chevron_left_black_36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_project_count"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:text="진행 중인 프로젝트 - "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_project_act_list"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/rl_list_act_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

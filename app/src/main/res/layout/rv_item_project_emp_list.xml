@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/btn_project_emp_item_whole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="16dp"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_project_emp_item_duty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="개발자 직무"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_project_emp_item_skill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_project_emp_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_project_emp_item_input_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투입일" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ~ "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_project_emp_item_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종료일" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#ECEFF1" />
+</RelativeLayout>
